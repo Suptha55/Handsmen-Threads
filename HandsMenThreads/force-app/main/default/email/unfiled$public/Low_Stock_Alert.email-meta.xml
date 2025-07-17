@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Order_Confirmation_Email</letterhead>
+    <name>Low Stock Alert</name>
+    <style>freeForm</style>
+    <subject>Important: Product stock running low</subject>
+    <textOnly>&lt;p&gt;Dear {!HandsMen_Customer_c.Full_Name_c},&lt;/p&gt;
+
+&lt;p&gt;We wanted to let you know that stock levels for the following product(s) are running low:&lt;/p&gt;
+
+&lt;p&gt;Product Name: {!Inventory_c.Product_c}&lt;/p&gt;
+&lt;p&gt;Available Quantity: {!Inventory_c.Stock_Quantity_c}&lt;/p&gt;
+
+&lt;p&gt;Please consider placing a new order soon to avoid any stockouts.&lt;/p&gt;
+
+&lt;p&gt;Best Regards,&lt;/p&gt;
+
+&lt;p&gt;Inventory Team&lt;/p&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
